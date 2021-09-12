@@ -1,6 +1,11 @@
 import discord
 import os
 import random
+from dotenv import load_dotenv
+
+load_dotenv()
+token = os.getenv("TOKEN")
+
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged on as', self.user)
@@ -32,7 +37,7 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run(ENTER TOKEN HERE!)
+client.run(token)
 
 
 # def momjokes():
