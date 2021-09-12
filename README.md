@@ -15,3 +15,11 @@ pip install -U discord.py
 ```bash
 project-mum\Scripts\activate.bat
 ```
+
+### Create a dotenv file
+
+Create a file named `.env`. Enter the following variables:
+
+```.env
+TOKEN=discord_token
+```
